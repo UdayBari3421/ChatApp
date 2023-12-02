@@ -1,0 +1,30 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "This is ChatApp Using NodeJS , ExpressJS and SocketIo ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UdayBari3421/ChatApp.git"
+  },
+  "keywords": [
+    "ChatApp"
+  ],
+  "author": "Uday Bari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UdayBari3421/ChatApp/issues"
+  },
+  "homepage": "https://github.com/UdayBari3421/ChatApp#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

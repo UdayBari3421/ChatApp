@@ -11,36 +11,32 @@
 <body>
     <form class="form-username" id="form">
         <h1>Join Chat</h1>
-        <p>Username</p>
-        <input type="text" placeholder="Username" id="username-input" />
+        <div class="form-row">
+            <label for="username-input">Username</label>
+            <input type="text" placeholder="Username" id="username-input" />
+        </div>
         <button id="join-chat" type="submit">Join chat</button>
     </form>
     <div class="chatroom-container">
         <div class="chatroom-header">
             <div class="chatrow">
-                <i class="bi bi-person-circle"></i>
+                <i class="bi bi-chat-dots-fill"></i>
                 <div class="person">
-                    <h5>Uday</h5>
-                    <p class="online-message">Online</p>
+                    <h5>ChatApp</h5>
                 </div>
             </div>
-            <div class="chatrow" style="gap: 20px;">
-                <i class="bi bi-camera-video"></i>
-                <i class="bi bi-telephone"></i>
-                <i class="bi bi-three-dots-vertical"></i>
-            </div>
         </div>
-        <div class="messages-container">
-            <div class="message receive">hey (recieved message)</div>
-            <div class="message sent">hi (sent message)</div>
-        </div>
-        <div class="footer">
+        <div class="messages-container"></div>
+        <form class="footer">
             <input type="text" placeholder="Message" id="message-input" />
             <button id="send-button">
                 <i class="bi bi-send"></i>
             </button>
-        </div>
+        </form>
     </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+        integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+        crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
 </body>

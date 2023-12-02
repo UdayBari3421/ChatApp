@@ -1,0 +1,179 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-75');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ec008c, #fc6767);
+}
+
+.chatroom-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+#form {
+    justify-content: space-between;
+    gap: 33px;
+    flex-direction: column;
+    gap: 25px;
+    padding: 120px 90px;
+    display: flex;
+    border-radius: 12px;
+    background: linear-gradient(to right, #00b3ff41, #49324061);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+form>* {
+    font-family: 'Inter', sans-serif !important;
+}
+
+form>h1 {
+    text-align: center;
+    text-shadow: 0px 2px 20px #000000;
+}
+
+#join-chat,
+#username-input {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+label {
+    font-size: 12px;
+}
+
+#join-chat {
+    background-image: linear-gradient(to right top, #71c9ff, #4eb4ff 75%);
+    cursor: pointer;
+}
+
+#username-input {
+    color: white;
+    background-image: linear-gradient(to right top,
+            #d16ba5, #d357ae, #d041bb,
+            #c72acc, #b610e0, #9e36ed,
+            #824af7, #5f58ff, #4673ff,
+            #3a88ff, #459bff, #5facfb);
+}
+
+.chatroom-header {
+    background-color: #f0f2f5;
+    color: black;
+    font-size: 2rem;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-inline: 12px;
+    align-items: center;
+}
+
+.messages-container {
+    height: 100%;
+    background: url(img/chatbg.jpg) no-repeat 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding-inline: 12px;
+}
+
+.messages-container::-webkit-scrollbar {
+    display: none;
+}
+
+.message {
+    background-color: whitesmoke;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 12px;
+    padding-inline: 15px;
+    margin-top: 15px;
+}
+
+.receive {
+    border-top-left-radius: 0px;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: #DCF8C6;
+    border-bottom-right-radius: 0px;
+}
+
+.center {
+    align-self: center;
+}
+
+.footer {
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    background: #f0f2f5;
+    gap: 12px;
+    padding: 12px;
+    align-items: center;
+}
+
+#message-input {
+    width: 92%;
+    border-radius: 15px;
+    padding-inline: 12px;
+    height: 100%;
+    border: 4px double grey;
+}
+
+#send-button>.bi {
+    margin-left: 8px;
+    rotate: 43deg;
+}
+
+.chatrow {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+#send-button {
+    border-radius: 100%;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #00a884;
+    color: white;
+    min-height: 12px;
+    min-width: 40px;
+    border: none;
+    font-size: 18px;
+}
+
+.bi:hover {
+    cursor: pointer;
+}
